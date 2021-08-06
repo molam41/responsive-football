@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: #2D25A0;
+}
+.navigation{
+    padding: 40px 140px 0 156px;
+    display: flex;
+    justify-content:space-between;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+.touranament h1{
+    font-size: 64px;
+    color: white;
+}
+.touranament a, .chanel-info a, .login{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    background-color: #E02C6D;
+    padding: 10px 30px;
+    border-radius: 2px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 86px 140px 86px 156px;
+}
+.main-banner{
+    display: flex;
+    justify-content: center;
+}
+.main-banner img{
+    width: 100%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1050px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.thumbnail img{
+    width: 300px;
+    height: 256px;
+}
+.main{
+    background-color: #FFFFFF;
+}
+.main-body{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.player{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.chanel-info h1{
+    font-size: 48px;
+}
+.highlight{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 65px;
+    padding: 150px;
+}
+.main-banner img{
+    width: 567px;
+    height: 427px;
+}
+.logo img{
+    width: 480px;
+}
+.social-medias{
+    display: flex;
+    justify-content: center;
+}
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.social-icons a{
+    padding: 10px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    margin-bottom: 30px;
+}
+footer p{
+    text-align: center;
+}
