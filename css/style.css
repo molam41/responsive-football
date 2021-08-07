@@ -60,11 +60,11 @@ nav a{
     justify-content: center;
     padding: 50px;
 }
-.player{
+.player, .stadium, .team{
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
-.chanel-info h1{
+.chanel-info h1 {
     font-size: 48px;
 }
 .highlight{
@@ -103,6 +103,23 @@ footer p{
     text-align: center;
 }
 
+.venu, .countries{
+    display: flex;
+    justify-content: center;
+}
+.stadium-heading, .team-heading{
+    text-align: center;
+    font-size: 48px;
+}
+
+.stadiums, .teams{
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 779px) {
@@ -131,13 +148,13 @@ footer p{
     .logo img{
         width: 240px;
     }
+    .stadiums, .teams{
+        width: 400px;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 50px;
+    }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 780px) {
@@ -161,6 +178,11 @@ footer p{
         grid-gap: 30px;
         padding: 70px;
     }
+    .stadiums, .teams{
+        width: 400px;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 50px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -181,5 +203,12 @@ footer p{
         grid-template-columns: repeat(2,1fr);
         grid-gap: 65px;
         padding: 150px;
+    }
+    .stadiums, .teams{
+        width: 900px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
     }
 }
