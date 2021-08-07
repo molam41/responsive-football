@@ -73,9 +73,9 @@ nav a{
     grid-gap: 65px;
     padding: 150px;
 }
+
 .main-banner img{
     width: 567px;
-    height: 427px;
 }
 .logo img{
     width: 480px;
@@ -101,4 +101,85 @@ footer{
 }
 footer p{
     text-align: center;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 779px) {
+    .navigation{
+        display: none;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        padding: 50px 20px 50px 20px;
+        grid-row-gap: 50px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        width: 350px;
+    }
+    .highlight{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 30px;
+    }
+    .main-banner img{
+        width: 100%;
+    }
+    .logo img{
+        width: 240px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 780px) {
+    .touranament h1{
+        font-size: 40px;
+    }
+    .navigation{
+        padding: 40px 20px 0 20px;    
+    }
+    .banner{
+        padding: 86px 20px 86px 20px;
+    }    
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        width: 750px;
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+    }
+    .highlight{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 70px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1080px) {
+    .navigation{
+        padding: 40px 140px 0 156px;    
+    }
+    .banner{
+        padding: 86px 140px 86px 156px;
+    }
+    .players{
+        grid-template-columns: repeat(3, 1fr);
+        width: 1050px;
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }    
+    .highlight{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 65px;
+        padding: 150px;
+    }
 }
